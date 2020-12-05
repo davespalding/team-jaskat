@@ -1,6 +1,7 @@
 import camelCase from '../src/camelCase.js';
 import chai from 'chai';
 const assert = chai.assert;
+const expect = chai.expect;
 
 describe('Unit test - camelCase.js', () => {
     it('camelCase convertion - Pass', () => {
