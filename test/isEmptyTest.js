@@ -1,15 +1,18 @@
-import empty from '../src/isEmpty';
+import empty from '../src/isEmpty.js';
 import chai from 'chai';
 const assert = chai.assert;
 
 describe('Unit test - isEmpty.js', () => {
     it('isEmpty - Pass', () => {
-        assert(empty(null)).equal(true);
-    });
-    it('isEmpty - Fail', () => {
-        assert(empty(1)).notEqual(false);
+        const result = empty(null);
+        assert.equal(result, true);
     });
     it('isEmpty - Pass', () => {
-        assert(empty('abc')).equal(false);
+        const result = empty(1);
+        assert.equal(result, true);
+    });
+    it('isEmpty - Fail', () => {
+        const result = empty('abc');
+        assert.equal(result, false);
     });
 })

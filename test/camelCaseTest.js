@@ -1,15 +1,22 @@
-import camel from '../src/camelCase';
+import camelCase from '../src/camelCase.js';
 import chai from 'chai';
 const assert = chai.assert;
+const expect = chai.expect;
 
 describe('Unit test - camelCase.js', () => {
-    it('camelCase - Pass', () => {
-        assert(camel('iphone')).equal(('iPhone'), true);
+    it('camelCase convertion - Pass', () => {
+        const result = camelCase(" TommySHELBY");
+        const expct = (" tommyShelby");
+        assert.equal(result, expct);
     });
-    it('camelCase - Fail', () => {
-        assert(camel('ebay')).notEqual(('ebay'), false);
+    it('camelCase convertion - Fail', () => {
+        const result = camelCase(" TOMMYSHELBY");
+        const expct = (" tommyShelby");
+        assert.notEqual(result, expct);
     });
-    it('camelCase - Pass', () => {
-        assert(camel('johnSmith')).equal(('johnsmith'), true);
+    it('camelCase convertion - Fail', () => {
+        const result = camelCase(" johnsmith");
+        const expct = (" ");
+        assert.notEqual(result, expct);
     });
 });
