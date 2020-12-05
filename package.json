@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "nyc --require babel-core/register mocha",
-    "coverage": "nyc --reporter=text-lcov | coveralls"
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "author": "",
   "license": "MIT",
