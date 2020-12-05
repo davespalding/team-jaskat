@@ -1,3 +1,4 @@
 {
-  "exclude": ["src/.internal/", "test/"]
+  "exclude": ["src/.internal/", "test/"],
+  "reporter": ["text"]
 }
