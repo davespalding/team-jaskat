@@ -1,5 +1,21 @@
 {
   "all": "true",
-  "exclude": ["src/.internal/", "test/"],
+  "exclude": [
+    "src/.internal/",
+    "src/at.js",
+    "src/castArray.js",
+    "src/chunk.js",
+    "src/clamp.js",
+    "src/compact.js",
+    "src/defaultTo.js",
+    "src/defaultToAny.js",
+    "src/difference.js",
+    "src/drop.js",
+    "src/isBoolean.js",
+    "src/isDate.js",
+    "src/isTypedArray.js",
+    "src/slice.js",
+    "test/"
+    ],
   "reporter": ["text"]
 }
