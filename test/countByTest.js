@@ -1,6 +1,7 @@
 import count from '../src/countBy.js';
 import chai from 'chai';
 const assert = chai.assert;
+const expect = chai.expect;
 
 const users = [
        { 'user': 'barney', 'active': true },
@@ -11,7 +12,8 @@ const users = [
 describe('Unit test - countBy.js', () => {
     it('countBy with active user - Pass', () => {
         const result = count(users, value => value.active);
-        const expct = ({'true' : 1, 'false' : 0});
+        console.log(result);
+        const expct = ({'true' : 1, 'false' : 0})
         assert.deepEqual(result, expct);
     });
     it('countBy with active user - Fail', () => {
