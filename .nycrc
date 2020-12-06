@@ -1,5 +1,4 @@
 {
-  "all": "true",
   "exclude": [
     "src/.internal/",
     "src/at.js",
@@ -16,6 +15,5 @@
     "src/isTypedArray.js",
     "src/slice.js",
     "test/"
-    ],
-  "reporter": ["text"]
+    ]
 }
